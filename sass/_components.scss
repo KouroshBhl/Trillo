@@ -103,6 +103,10 @@
     list-style: none;
     position: relative;
 
+    &:first-child {
+      background-color: var(--color-primary);
+    }
+
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
@@ -139,13 +143,15 @@
     position: relative;
     z-index: 1;
   }
+  &__link:active {
+    background-color: var(--color-primary-light);
+  }
+
   &__icons {
     width: 2rem;
     height: 2rem;
     fill: currentColor;
     margin-right: 1.5rem;
-  }
-  &__text {
   }
 }
 
@@ -154,6 +160,73 @@
   padding: 1.2rem;
   font-size: 1.4rem;
   font-weight: 700;
-  &__text {
+}
+
+//? Gallery
+.gallery {
+  display: flex;
+  &__img {
+    max-width: 100%;
+    background-size: cover;
+  }
+}
+
+.overview {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  &__title {
+    text-transform: uppercase;
+    padding: 1.6rem 3.2rem;
+    font-weight: 300;
+    font-size: 2.25rem;
+    letter-spacing: 0.125rem;
+  }
+  &__stars {
+    display: flex;
+    margin-right: auto;
+
+    &-icon {
+      fill: var(--color-primary);
+      height: 1.75rem;
+      width: 1.75rem;
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    &-icon {
+      fill: var(--color-primary);
+      height: 1.75rem;
+      width: 1.75rem;
+      margin-right: 0.7rem;
+    }
+    &-text {
+      font-size: 1.2rem;
+      cursor: pointer;
+      text-decoration: underline;
+      color: var(--color-primary);
+      letter-spacing: -0.7px;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    align-self: stretch;
+    color: var(--color-grey-light-1);
+    padding: 0 2.4rem;
+
+    &-score {
+      font-size: 2.2rem;
+      font-weight: 300;
+    }
+    &-votes {
+    }
   }
 }

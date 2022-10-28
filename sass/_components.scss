@@ -91,3 +91,45 @@
     }
   }
 }
+
+//? Side bar navigation
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.8rem;
+
+  &__list {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: currentColor;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+  &__icons {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: currentColor;
+    margin-right: 1.5rem;
+  }
+  &__text {
+  }
+}
+
+.copyright {
+  align-self: center;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  &__text {
+  }
+}

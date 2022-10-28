@@ -126,6 +126,39 @@ body {
   margin-right: 1.2rem;
 }
 
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.8rem;
+}
+.side-nav__list {
+  list-style: none;
+}
+.side-nav__list:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.side-nav__link {
+  text-decoration: none;
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.side-nav__icons {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: currentColor;
+  margin-right: 1.5rem;
+}
+.copyright {
+  align-self: center;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 .container {
   max-width: 120rem;
   background-color: var(--color-grey-light-2);
@@ -144,11 +177,16 @@ body {
 
 .content {
   display: flex;
+  height: 100vh;
 }
 
 .sidebar {
-  background-color: red;
+  background-color: var(--color-grey-dark-1);
   flex: 0 0 18%;
+  color: var(--color-grey-light-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {

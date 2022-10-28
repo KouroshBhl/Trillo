@@ -101,12 +101,33 @@
 
   &__list {
     list-style: none;
+    position: relative;
 
     &:not(:last-child) {
       margin-bottom: 1rem;
     }
+
+    &::before {
+      content: "";
+      background-color: var(--color-primary);
+      height: 100%;
+      width: 3px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleY(0);
+
+      transition: transform 0.2s,
+        width 0.4s cubic-bezier(1, -0.12, 0, 1.25) 0.2s;
+    }
+
+    &:hover::before {
+      width: 100%;
+      transform: scaleY(1);
+    }
   }
-  &__link {
+  &__link:visited,
+  &__link:link {
     text-decoration: none;
     color: currentColor;
     display: flex;
@@ -114,10 +135,13 @@
     padding: 1.5rem 3rem;
     text-transform: uppercase;
     font-size: 1.4rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
   }
   &__icons {
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2rem;
+    height: 2rem;
     fill: currentColor;
     margin-right: 1.5rem;
   }

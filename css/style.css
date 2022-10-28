@@ -38,12 +38,6 @@ body {
   min-height: 100vh;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo {
   height: 3.25rem;
   margin-left: 3.25rem;
@@ -83,18 +77,55 @@ body {
   fill: var(--color-grey-dark-3);
 }
 
-.user__bookmark {
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-self: stretch;
+  cursor: pointer;
+}
+.user > * {
+  align-items: center;
+  display: flex;
+  padding: 0 1.25rem;
+}
+.user > *:hover {
+  background-color: var(--color-grey-light-3);
+}
+.user__icon {
+  fill: var(--color-grey-dark-2);
+  position: relative;
+}
+.user__icon--svg {
   height: 2.25rem;
   width: 2.25rem;
 }
-.user__chat {
-  height: 2.25rem;
-  width: 2.25rem;
+.user__icon--noti {
+  color: var(--color-grey-light-1);
+  font-size: 1.2rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  height: 1.75rem;
+  width: 1.75rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 1.4rem;
+  right: 0.4rem;
+}
+.user__profile {
+  display: flex;
+  align-items: center;
 }
 .user__profile--img {
   height: 3.75rem;
   border-radius: 50%;
+  margin-right: 1.2rem;
 }
+.user__profile--name {
+  margin-right: 1.2rem;
+}
+
 .container {
   max-width: 120rem;
   background-color: var(--color-grey-light-2);
@@ -106,6 +137,9 @@ body {
   height: 7rem;
   background-color: var(--color-grey-light-1);
   font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {

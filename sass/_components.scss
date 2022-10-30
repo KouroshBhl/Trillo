@@ -175,6 +175,7 @@
   background-color: #fff;
   display: flex;
   align-items: center;
+  border-bottom: var(--line);
   &__title {
     text-transform: uppercase;
     padding: 1.6rem 3.2rem;
@@ -262,13 +263,6 @@
   100% {
     transform: scale(1);
     box-shadow: none;
-  }
-}
-
-.detail {
-}
-.desc {
-  &__text {
   }
 }
 

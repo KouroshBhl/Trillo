@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: var(--line);
 }
 .content {
   display: flex;
@@ -24,7 +25,23 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .hotel-view {
-  background-color: yellow;
   flex: 1;
+  border-bottom: var(--line);
+}
+.detail {
+  display: flex;
+  gap: 4.5rem;
+  padding: 4.5rem;
+}
+.desc {
+  flex: 0 0 60%;
+  padding: 3rem;
+  font-size: 1.4rem;
+}
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1;
+  padding: 3rem;
 }

@@ -57,6 +57,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 31.25em) {
+  .search {
+    flex: 0 0 100%;
+    order: 1;
+  }
+}
 .search__input {
   color: var(--color-grey-dark-3);
   font-size: inherit;
@@ -201,6 +207,14 @@ body {
     font-size: 1.5rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .side-nav__link:visited, .side-nav__link:link {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding: 1.5rem 1rem;
+  }
+}
 .side-nav__link:active {
   background-color: var(--color-primary-light);
 }
@@ -240,6 +254,12 @@ body {
   font-size: 2.25rem;
   letter-spacing: 0.125rem;
 }
+@media only screen and (max-width: 31.25em) {
+  .overview__title {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+  }
+}
 .overview__stars {
   display: flex;
   margin-right: auto;
@@ -270,10 +290,21 @@ body {
   color: var(--color-grey-light-1);
   padding: 0 2.4rem;
 }
+@media only screen and (max-width: 31.25em) {
+  .overview__rating {
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
 .overview__rating-score {
   font-size: 2.2rem;
   font-weight: 300;
   margin-bottom: -3px;
+}
+@media only screen and (max-width: 31.25em) {
+  .overview__rating-score {
+    font-size: 1.8rem;
+  }
 }
 .overview__rating-votes {
   font-size: 1rem;
@@ -360,6 +391,11 @@ body {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .recommend {
+    flex-direction: row;
+  }
+}
 .recommend__text {
   color: var(--color-grey-dark-3);
 }
@@ -370,6 +406,11 @@ body {
   .recommend__freinds {
     margin-left: 0;
     margin-top: 1.4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .recommend__freinds {
+    margin-left: auto;
   }
 }
 .recommend__photos {
@@ -503,7 +544,6 @@ body {
     max-width: 100%;
   }
 }
-
 .header {
   height: 7rem;
   background-color: var(--color-grey-light-1);
@@ -512,6 +552,13 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--line);
+}
+@media only screen and (max-width: 31.25em) {
+  .header {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
 }
 
 .content {
@@ -549,6 +596,11 @@ body {
   .detail {
     padding: 2rem;
     gap: 2.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .detail {
+    flex-direction: column;
   }
 }
 

@@ -11,6 +11,8 @@
   @media only screen and (max-width: $bp-large) {
     max-width: 100%;
   }
+  @media only screen and (max-width: $bp-smallest) {
+  }
 }
 .header {
   height: 7rem;
@@ -20,6 +22,11 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--line);
+  @media only screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
 }
 .content {
   display: flex;
@@ -52,6 +59,10 @@
   @media only screen and (max-width: $bp-medium) {
     padding: 2rem;
     gap: 2.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
   }
 }
 .desc {
